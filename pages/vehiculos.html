@@ -10,29 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
     <script src="https://kit.fontawesome.com/d8bbfda051.js" crossorigin="anonymous"></script>
-    <title>Vehículos - HLL.XYZ</title>
+    <title>VEHÍCULOS - HLL.XYZ</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1><strong>HLL</strong></h1>
-        </div>
-        <nav>
-            <ul>
+        <nav class="navbar container">
+            <a href="../index.html" class="logo"><h1>HLL.XYZ</h1></a>
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><i class="fa-solid fa-bars fa-xl"></i></label>
+            <div class="menu">
+              <ul class="list">
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="roles.html">ROLES</a></li>
                 <li><a href="vehiculos.html">VEHÍCULOS</a></li>
                 <li><a href="mapas.html">MAPAS</a></li>
                 <li><a href="modos.html">MODOS DE JUEGO</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>    
-        <div class="lupa">
-            <i class="fa fa-search" aria-hidden="true"></i> Buscar
-        </div>
-        <div id="menu">
-            <i class="fa-solid fa-bars fa-xl"></i>
-        </div>
+              </ul>
+            </div>
+          </nav>
     </header>
     <div class="grid">
         <aside class="sidebar1"><p class="publicidad"><br><br>Publicidad 1</p></aside>
@@ -49,6 +45,8 @@
                 <article class="contenido"> 
                     <h2>CAMIONES DE TRANSPORTE</h2>
                     <br>
+                    <p>El propósito de estos camiones es la de transportar una gran cantidad de tropas por el mapa.</p><br>
+                    <p>Además del conductor, el camión de transporte puede transportar 11 pasajeros adicionales. Cualquier rol puede conducir o viajar en el vehículo.</p><br>
                 </article>
 
                 <article class="contenido"> <!-- CAMION TRANSPORTE ALEMANIA -->
@@ -63,10 +61,26 @@
                     <img src="../img/vehiculos/transporte/transporte_eeuu.webp" alt="camion de transporte estados unidos" class="img-vehiculos"><br><br>
                 </article>
 
+                <article class="contenido"> <!-- CAMION TRANSPORTE SOVIÉTICO -->
+                    <h3>Camión de Transporte soviético</h3>
+                    <br>
+                    <img src="../img/vehiculos/transporte/transporte_urss.jpg" alt="camion de transporte soviético" class="img-vehiculos"><br><br>
+                </article>
+
                 <article class="contenido"> 
                     <hr>
                     <br>
                     <h2>CAMIONES DE SUMINISTROS</h2>
+                    <br>
+                    <p>El propósito de estos camiones es la de entregar suministros desde el cuartel general hasta el frente de batalla.</p><br>
+                    <p>El camión de suministros lleva dos cajas de suministros que puede dejar detrás del camión. Cada caja de suministros contiene 150 suministros.</p><br>
+                    <p>Además del conductor, el camión de suministro puede transportar 1 pasajero adicional. Cualquier rol puede conducir o viajar en el vehículo.</p><br>
+                    <ul>
+                        <li>Un equipo no puede tener más de tres camiones de suministro activos en un momento dado.</li>
+                        <li>Los suministros no se pueden dejar caer en el territorio del cuartel general aliado (las dos cuadrículas del mapa más cercanas al cuartel general del equipo), salvo en el modo de juego ofensivo (equipo atacante).</li>
+                        <li>Los camiones de suministro se pueden recargar un número ilimitado de veces en las grúas pórtico ubicadas en los puntos de generación de base (HQ).</li>
+                        <li>No hay límite en la cantidad de suministros que un jugador o camión puede arrojar en una partida.</li>
+                    </ul>
                     <br>
                 </article>
 
@@ -77,6 +91,21 @@
                     <br><br>
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/WDj4sn5lNnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
                 </article> 
+
+                <article class="contenido"> <!-- CAMIÓN DE SUMINISTROS SOVIÉTICO-->
+                    <h3>Camión de suministros soviético</h3>
+                    <br>
+                    <img src="../img/vehiculos/camion_suministros/camion_suministros_urss.jpg" alt="camion de suministros unión soviética" class="img-vehiculos">
+                    <br>
+                </article>
+
+                <article class="contenido"> <!-- CAMIÓN DE SUMINISTROS ALEMÁN -->
+                    <br>
+                    <h3>Camión de suministros alemán</h3>
+                    <br>
+                    <img src="../img/vehiculos/camion_suministros/camion_suministros_alemania.jpg" alt="camion de suministros alemán" class="img-vehiculos">
+                    <br><br>
+                </article>
 
                 <article class="contenido"> 
                     <hr>
@@ -90,6 +119,12 @@
                     <br>
                     <img src="../img/vehiculos/reconocimiento/recon_alemania.webp" alt="tanque de reconocimiento alemán" class="img-vehiculos">
                     <br><br>
+                    <p>Con su armamento ligero, este vehículo es adecuado para monitorear los movimientos enemigos y eliminar a la infantería.</p>
+                    <br>
+                    <p>El Puma cuenta con un KwK 39/1 de 50 mm como su cañón principal, capaz de enfrentarse a la infantería enemiga y a los blindados ligeros. Dispone de proyectiles AP como HE, siendo los HE los más efectivos contra la infantería.</p>
+                    <br>
+                    <p>El Puma también cuenta con una ametralladora MG34 fijada a la torreta, que es controlada por uno de los tripulantes. Tiene una capacidad de munición de 200 proyectiles antes de necesitar recargar con un total de 7 cajas de munición, lo que le permite lanzar un aluvión constante de fuego de supresión sobre la infantería enemiga.</p>
+                    <br>
                 </article> 
 
                 <article class="contenido"> <!-- TANQUE DE RECONOMIENTO ESTADOS UNIDOS --> 
@@ -97,6 +132,8 @@
                     <br>
                     <img src="../img/vehiculos/reconocimiento/recon_eeuu.webp" alt="tanque de reconocimiento estados unidos" class="img-vehiculos">
                     <br><br>
+                    <p>El M8 Greyhound cuenta con un cañón M3 de 37 mm como cañón principal, capaz de enfrentarse a la infantería enemiga y a los blindados ligeros.</p><br>
+                    <p>El M8 Greyhound también cuenta con una ametralladora Browning M1919 fijada a la torreta. Tiene una capacidad de munición de 200 proyectiles antes de necesitar recargar con un total de 7 cajas de munición, lo que le permite lanzar un aluvión constante de fuego de supresión sobre la infantería enemiga.</p><br>
                 </article> 
 
                 <article class="contenido"> <!-- TANQUE DE RECONOMIENTO UNIÓN SOVIÉTICA --> 
@@ -104,6 +141,8 @@
                     <br>
                     <img src="../img/vehiculos/reconocimiento/recon_urss.webp" alt="tanque de reconocimiento unión soviética" class="img-vehiculos">
                     <br><br>
+                    <p>El BA-10 cuenta con un cañón 20-K de 45 mm como cañón principal, capaz de enfrentarse a la infantería enemiga y a los blindados ligeros.</p><br>
+                    <p>El BA-10 también cuenta con una ametralladora DT fijada a la torreta. Tiene una capacidad de munición de 200 proyectiles antes de necesitar recargar con un total de 7 cajas de munición, lo que le permite lanzar un aluvión constante de fuego de supresión sobre la infantería enemiga.</p><br>
                 </article> 
 
                 <article class="contenido"> 
@@ -118,6 +157,7 @@
                     <br>
                     <img src="../img/vehiculos/tanque_mediano/tanque_mediano_aleman.webp" alt="tanque mediano alemán Panzer IV" class="img-vehiculos">
                     <br><br>
+                    <p>A partir de la Actualización 11, el Panzer IV reemplazó al Panther como el tanque mediano alemán estándar. Al ser más ágil pero un poco menos armado y blindado que su predecesor, es un buen tanque para enfrentarse a la infantería y a los blindados ligeros y medianos.</p><br>
                 </article> 
 
                 <article class="contenido"> <!-- TANQUE MEDIANO ESTADOS UNIDOS --> 
@@ -125,6 +165,8 @@
                     <br>
                     <img src="../img/vehiculos/tanque_mediano/tanque_mediano_estados_unidos.webp" alt="tanque mediano estados unidos M4A1 Sherman" class="img-vehiculos">
                     <br><br>
+                    <p>El M4A1 cuenta con un cañón M1A1 de 75 mm como cañón principal, capaz de enfrentarse a armaduras medianas y ligeras enemigas. Para derribar el blindaje Tiger I enemigo, la tripulación debe usar su velocidad y agilidad superiores para flanquearlo, ya que el cañón de 75 mm no puede penetrar el blindaje frontal de un Tiger I o un Panther, pero puede penetrar un Panzer IV desde el frente. Tanto los proyectiles AP como los HE están disponibles para su uso, siendo el HE el más efectivo contra la infantería con su gran daño por salpicadura.</p><br>
+                    <p>El M4 también cuenta con dos ametralladoras Browning M1919, una montada en el casco y controlada por el conductor, y la otra está fijada a la torreta, que es controlada por uno de los tripulantes. Tienen una capacidad de munición de 200 rondas antes de necesitar recargar con un total de 5 cajas de munición, lo que te permite lanzar un aluvión constante de fuego de supresión sobre la infantería enemiga.</p><br>
                 </article> 
 
                 <article class="contenido"> <!-- TANQUE MEDIANO UNIÓN SOVIÉTICA --> 
@@ -132,6 +174,7 @@
                     <br>
                     <img src="../img/vehiculos/tanque_mediano/tanque_mediano_urss.webp" alt="tanque mediano soviético T-34" class="img-vehiculos">
                     <br><br>
+                    <p>Es el tanque mediano utilizado por el Ejército Rojo. Fue una mejora con respecto al T-34 (1940) con el antiguo cañón L-11 de 76 mm reemplazado por el cañón F-34 de 76 mm.</p><br>
                 </article> 
 
                 <article class="contenido"> 
@@ -185,10 +228,9 @@
         <footer class="footer">
             <div class="footer-izq"><p>HLL.XYZ - 2022</p></div>
             <div class="footer-der" id="iconos">
-                <div><i class="fa-brands fa-steam fa-lg"></i></div>
-                <div><i class="fa-brands fa-discord fa-lg"></i></div>
-                <div><i class="fa-brands fa-twitch fa-lg"></i></div>
-                <div><i class="fa-brands fa-youtube fa-lg"></i></div>
+                <div><a href="https://store.steampowered.com/app/686810/Hell_Let_Loose/" target="_blank"><i class="fa-brands fa-steam fa-lg" id="steam"></i></a></div>
+                <div><a href="https://discord.gg/dXNMczAk" target="_blank"><i class="fa-brands fa-discord fa-lg" id="discord"></i></a></div>
+                <div><a href="https://www.youtube.com/c/HellLetLoose" target="_blank"><i class="fa-brands fa-youtube fa-lg" id="youtube"></i></a></div>
             </div>
         </footer>
     </div>

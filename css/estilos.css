@@ -2,6 +2,36 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     user-select: none;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 10px 10px 15px 10px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: black;
+    padding-block: 8px;
+}
+.navbar a {
+    text-decoration: none;
+    color: inherit; 
+}
+.logo {
+    margin-right: 50px;
+}
+.list {
+    list-style: none;
+    display: flex;
+
+}
+#toggler, .navbar label {
+    display: none;
 }
 
 .titulos-articulos {
@@ -23,8 +53,8 @@ p {
 header {
     background-color: black;
     color: white;
-    display: grid;
-    grid-template-columns: 13% 70% 12%;
+    display: flex;
+    width: 100%;
     position: sticky;
     top: 0;
 }
@@ -35,6 +65,7 @@ nav ul {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    padding-right: 50px;
 }
 
 nav ul li {
@@ -53,10 +84,6 @@ nav ul li a:hover {
     color: springgreen;
 }
 
-.lupa {
-    padding-top: 10px;
-    text-align: center;
-}
 
 h1 {
     font-weight: 900;
@@ -71,8 +98,9 @@ h3 {
     font-weight: 300;
 }
 
-.logo {
-    text-align: center;
+.h3-justify {
+    text-align: justify;
+    font-weight: 600;
 }
 
 .sidebar1 {
@@ -171,10 +199,6 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-#menu {
-    display: none;
 }
 
 .fila {
@@ -227,6 +251,8 @@ h3 {
     background-color: black;
     color: white;
     width: 80%;
+    border: 0;
+    height: 35px;
 }
 
 .cont-botones {
@@ -240,32 +266,72 @@ h3 {
 
 .boton-der {
     width: 50%;
-    
 }
 
-@media (max-width: 1024px){
+.boton:hover {
+    background-color: springgreen;
+    color: black;
+}
 
-header {
-    background-color: black;
+#steam  {
     color: white;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    position: sticky;
-    top: 0;
-    }
-
-.logo {
-    margin-left: 8px;
 }
 
-.lupa {
-    display: none;
+#steam:hover {
+    color: springgreen;
 }
 
-#menu {
-    display: block;
-    text-align: center;
-    margin-top: 8px; 
+#discord {
+    color: white;
+}
+
+#discord:hover {
+    color: springgreen;
+}
+
+#youtube {
+    color: white;
+}
+
+#youtube:hover {
+    color: springgreen;
+}
+
+
+@media (max-width: 1110px) {
+
+.menu {
+    width: 100%;
+    max-height: 0; /*Makes the max-height 0 to side the expanded menu.*/
+    overflow: hidden; /*Hides the overflowing content.*/
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    flex-direction: column; /*Chances the direction of the flex container. By default it is a row so we change it to column in small screens.*/
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+#toggler:checked ~ .menu {
+    max-height: 100%;
+}
+
+
+nav label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 10px;
 }
 
 nav ul {
@@ -371,29 +437,31 @@ nav ul {
 
 }
 
+
 @media (max-width: 768px){
 
-header {
-    background-color: black;
-    color: white;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    position: sticky;
-    top: 0;
+.menu {
+    width: 100%;
+    max-height: 0; /*Makes the max-height 0 to side the expanded menu.*/
+    overflow: hidden; /*Hides the overflowing content.*/
 }
 
-.logo {
-    margin-left: 8px;
+.list {
+    flex-direction: column; /*Chances the direction of the flex container. By default it is a row so we change it to column in small screens.*/
+    align-items: center;
+    padding: 20px;
 }
 
-.lupa {
-    display: none;
+.navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
-#menu {
-    display: block;
-    text-align: center;
-    margin-top: 8px; 
+#toggler:checked ~ .menu {
+    max-height: 100%;
 }
 
 nav ul {
@@ -516,3 +584,5 @@ display: none;
 }
 
 }
+
+

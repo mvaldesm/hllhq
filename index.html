@@ -10,35 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
     <script src="https://kit.fontawesome.com/d8bbfda051.js" crossorigin="anonymous"></script>
-    <title>HLL en español - GRID/Flexbox</title>
+    <title>INICIO - HLL.XYZ</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1><strong>HLL</strong></h1>
-        </div>
-        <nav>
-            <ul>
+        <nav class="navbar container">
+            <a href="index.html" class="logo"><h1>HLL.XYZ</h1></a>
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><i class="fa-solid fa-bars fa-xl"></i></label>
+            <div class="menu">
+              <ul class="list">
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="pages/roles.html">ROLES</a></li>
-                <li><a href="pages/vehiculos.html">VEHICULOS</a></li>
+                <li><a href="pages/vehiculos.html">VEHÍCULOS</a></li>
                 <li><a href="pages/mapas.html">MAPAS</a></li>
                 <li><a href="pages/modos.html">MODOS DE JUEGO</a></li>
                 <li><a href="pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>    
-        <div class="lupa">
-            <i class="fa fa-search" aria-hidden="true"></i> Buscar
-        </div>
-        <div id="menu">
-            <i class="fa-solid fa-bars fa-xl"></i>
-        </div>
+              </ul>
+            </div>
+          </nav>
     </header>
     <div class="grid">
     <aside class="sidebar1"><p class="publicidad"><br><br>Publicidad 1</p></aside>
     <main>
         <section class="medio">
-            <iframe class="video-index" src="https://www.youtube.com/embed/S3hLu58KXg8" title="YouTube video player" width="100%" height="400px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+            <iframe class="video-index" src="https://www.youtube.com/embed/S3hLu58KXg8?autoplay=1&mute=1" title="YouTube video player" width="100%" height="400px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
             <article class="contenido articulo1">
                 <h2>HELL LET LOOSE</h1>
                 <br>
@@ -83,10 +79,9 @@
     <footer class="footer">
         <div class="footer-izq"><p>HLL.XYZ - 2022</p></div>
         <div class="footer-der" id="iconos">
-            <div><i class="fa-brands fa-steam fa-lg"></i></div>
-            <div><i class="fa-brands fa-discord fa-lg"></i></div>
-            <div><i class="fa-brands fa-twitch fa-lg"></i></div>
-            <div><i class="fa-brands fa-youtube fa-lg"></i></div>
+            <div><a href="https://store.steampowered.com/app/686810/Hell_Let_Loose/" target="_blank"><i class="fa-brands fa-steam fa-lg" id="steam"></i></a></div>
+            <div><a href="https://discord.gg/dXNMczAk" target="_blank"><i class="fa-brands fa-discord fa-lg" id="discord"></i></a></div>
+            <div><a href="https://www.youtube.com/c/HellLetLoose" target="_blank"><i class="fa-brands fa-youtube fa-lg" id="youtube"></i></a></div>
         </div>
     </footer>
 </div>
